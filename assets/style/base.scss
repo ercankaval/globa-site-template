@@ -1,0 +1,57 @@
+.v-card.corporate-content {
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+
+  .v-card-title {
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+
+  .v-img.corporate-image {
+    margin-bottom: 16px;
+  }
+
+  .v-card-text {
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+
+    p {
+      margin: 0 0 16px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a {
+        color: $themePrimaryColor;
+        text-decoration: none;
+      }
+    }
+  }
+
+  & + .v-card {
+    margin-top: 16px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .v-card-title {
+      font-size: 18px;
+    }
+    .v-card-text {
+      font-size: 14px;
+    }
+
+  }
+}
+
+.v-card-title {
+  word-wrap: inherit !important;
+  text-overflow: inherit !important;
+  white-space: inherit !important;
+}
